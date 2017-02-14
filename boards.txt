@@ -1,0 +1,85 @@
+##############################################################
+
+nRF51822.name=VBLUno nRF51822(V1.0 32KB)
+
+nRF51822.upload.tool=nrfutil
+nRF51822.upload.protocol=
+nRF51822.upload.maximum_size=262144
+nRF51822.upload.maximum_data_size=32768
+nRF51822.upload.speed=38400
+nRF51822.upload.disable_flushing=false
+nRF51822.upload.use_1200bps_touch=false
+nRF51822.upload.wait_for_upload_port=false
+
+nRF51822.bootloader.tool=nrfutil
+nRF51822.bootloader.bootloader_file=bootloader.hex
+
+nRF51822.build.mcu=cortex-m0
+nRF51822.build.f_cpu=16000000
+nRF51822.build.usb_product="Arduino VBLUno"
+nRF51822.build.board=VBLUno_nRF51822
+nRF51822.build.core=VBLUno_nRF51822
+nRF51822.build.variant=VBLUno_nRF51822_32KB
+nRF51822.build.extra_flags=-mthumb
+nRF51822.build.ldscript=linker_scripts/gcc/VBLUno_nRF51822.ld
+nRF51822.build.ble_api_include="-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-master" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-master/ble/services" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-master/source" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-master/source/services"
+nRF51822.build.nRF51822_api_include="-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/btle" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/btle/custom" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/common" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/ble_radio_notification" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/ble_services/ble_dfu" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/common" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/device_manager" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/device_manager/config" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/peer_manager" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/device" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/drivers_nrf/ble_flash" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/drivers_nrf/delay" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/drivers_nrf/hal" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/drivers_nrf/pstorage" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/drivers_nrf/pstorage/config" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/bootloader_dfu" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/bootloader_dfu/hci_transport" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/crc16" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/experimental_section_vars" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/fds" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/fstorage" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/hci" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/scheduler" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/timer" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/util" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/softdevice/common/softdevice_handler" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/softdevice/s130/headers"
+nRF51822.build.mbed_api_include="-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/api" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/common" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/hal" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/targets/cmsis" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/targets/cmsis/TARGET_NORDIC/TARGET_MCU_NRF51822/" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_VBLUNO_NRF51822"
+
+##############################################################
+
+nRF51822_NANO.name=BLE Nano(V1.0 32KB)- Comming soon
+
+nRF51822_NANO.upload.tool=nrfutil
+nRF51822_NANO.upload.protocol=
+nRF51822_NANO.upload.maximum_size=262144
+nRF51822_NANO.upload.maximum_data_size=32768
+nRF51822_NANO.upload.speed=38400
+nRF51822_NANO.upload.disable_flushing=false
+nRF51822_NANO.upload.use_1200bps_touch=false
+nRF51822_NANO.upload.wait_for_upload_port=false
+
+nRF51822_NANO.bootloader.tool=nrfutil
+nRF51822_NANO.bootloader.bootloader_file=bootloader.hex
+
+nRF51822_NANO.build.mcu=cortex-m0
+nRF51822_NANO.build.f_cpu=16000000
+nRF51822_NANO.build.usb_product="Arduino VBLUno"
+nRF51822_NANO.build.board=VBLUno_nRF51822
+nRF51822_NANO.build.core=VBLUno_nRF51822
+nRF51822_NANO.build.variant=BLE_Nano_32KB
+nRF51822_NANO.build.extra_flags=-mthumb
+nRF51822_NANO.build.ldscript=linker_scripts/gcc/VBLUno_nRF51822.ld
+nRF51822_NANO.build.ble_api_include="-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-master" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-master/ble/services" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-master/source" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-master/source/services"
+nRF51822_NANO.build.nRF51822_api_include="-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/btle" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/btle/custom" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/common" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/ble_radio_notification" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/ble_services/ble_dfu" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/common" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/device_manager" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/device_manager/config" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/peer_manager" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/device" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/drivers_nrf/ble_flash" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/drivers_nrf/delay" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/drivers_nrf/hal" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/drivers_nrf/pstorage" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/drivers_nrf/pstorage/config" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/bootloader_dfu" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/bootloader_dfu/hci_transport" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/crc16" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/experimental_section_vars" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/fds" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/fstorage" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/hci" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/scheduler" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/timer" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/util" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/softdevice/common/softdevice_handler" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/softdevice/s130/headers"
+nRF51822_NANO.build.mbed_api_include="-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/api" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/common" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/hal" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/targets/cmsis" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/targets/cmsis/TARGET_NORDIC/TARGET_MCU_NRF51822/" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_BLENANO_NRF51822"
+
+##############################################################
+
+nRF51822_NANO_CIRCLE.name=BLE Nano Circle(V1.0 32KB)- Comming soon
+
+nRF51822_NANO_CIRCLE.upload.tool=nrfutil
+nRF51822_NANO_CIRCLE.upload.protocol=
+nRF51822_NANO_CIRCLE.upload.maximum_size=262144
+nRF51822_NANO_CIRCLE.upload.maximum_data_size=32768
+nRF51822_NANO_CIRCLE.upload.speed=38400
+nRF51822_NANO_CIRCLE.upload.disable_flushing=false
+nRF51822_NANO_CIRCLE.upload.use_1200bps_touch=false
+nRF51822_NANO_CIRCLE.upload.wait_for_upload_port=false
+
+nRF51822_NANO_CIRCLE.bootloader.tool=nrfutil
+nRF51822_NANO_CIRCLE.bootloader.bootloader_file=bootloader.hex
+
+nRF51822_NANO_CIRCLE.build.mcu=cortex-m0
+nRF51822_NANO_CIRCLE.build.f_cpu=16000000
+nRF51822_NANO_CIRCLE.build.usb_product="Arduino VBLUno"
+nRF51822_NANO_CIRCLE.build.board=VBLUno_nRF51822
+nRF51822_NANO_CIRCLE.build.core=VBLUno_nRF51822
+nRF51822_NANO_CIRCLE.build.variant=BLE_Nano_Circle_32KB
+nRF51822_NANO_CIRCLE.build.extra_flags=-mthumb
+nRF51822_NANO_CIRCLE.build.ldscript=linker_scripts/gcc/VBLUno_nRF51822.ld
+nRF51822_NANO_CIRCLE.build.ble_api_include="-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-master" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-master/ble/services" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-master/source" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-master/source/services"
+nRF51822_NANO_CIRCLE.build.nRF51822_api_include="-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/btle" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/btle/custom" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/common" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/ble_radio_notification" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/ble_services/ble_dfu" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/common" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/device_manager" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/device_manager/config" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/ble/peer_manager" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/device" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/drivers_nrf/ble_flash" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/drivers_nrf/delay" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/drivers_nrf/hal" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/drivers_nrf/pstorage" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/drivers_nrf/pstorage/config" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/bootloader_dfu" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/bootloader_dfu/hci_transport" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/crc16" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/experimental_section_vars" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/fds" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/fstorage" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/hci" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/scheduler" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/timer" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/libraries/util" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/softdevice/common/softdevice_handler" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/ble-nrf51822-master/source/nordic_sdk/components/softdevice/s130/headers"
+nRF51822_NANO_CIRCLE.build.mbed_api_include="-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/api" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/common" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/hal" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/targets/cmsis" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/targets/cmsis/TARGET_NORDIC/TARGET_MCU_NRF51822/" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822" "-I{runtime.platform.path}/cores/VBLUno_nRF51822/mbed/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_BLENANO_NRF51822"
+
+##############################################################

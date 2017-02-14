@@ -1,0 +1,1 @@
+Chua sua kit cau hinh BLE_Nano va BLE_Nano_Circle

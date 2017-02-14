@@ -1,0 +1,7 @@
+
+nrfutil.name=nrfutil
+nrfutil.name.communication=serial
+nrfutil.name.protocol=
+nrfutil.name.program.protocol=
+nrfutil.program.tool=nrfutil
+nrfutil.program.extra_params=
