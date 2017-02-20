@@ -95,9 +95,9 @@ tools.nrfutil.cmd.path={runtime.tools.nrfutil.path}/Uploader.sh
 
 tools.nrfutil.upload.params.verbose=-v -v -v -v
 tools.nrfutil.upload.params.quiet=-q -q
-tools.nrfutil.upload.pattern="{cmd.path}" "nrfutil" "{build.path}/{build.project_name}_OTA.hex" "{build.path}/{build.project_name}_OTA.hex.zip" {serial.port} {upload.speed}
+tools.nrfutil.upload.pattern=sh "{cmd.path}" "nrfutil" "{build.path}/{build.project_name}_OTA.hex" "{build.path}/{build.project_name}_OTA.hex.zip" {serial.port} {upload.speed}
 
 
 tools.nrfutil.program.params.verbose=-v -v -v -v
 tools.nrfutil.program.params.quiet=-q -q
-tools.nrfutil.program.pattern="{cmd.path}" "nrfutil" "{build.path}/{build.project_name}_OTA.hex" "{build.path}/{build.project_name}_OTA.hex.zip" {serial.port} {upload.speed}
+tools.nrfutil.program.pattern=sh "{cmd.path}" "nrfutil" "{build.path}/{build.project_name}_OTA.hex" "{build.path}/{build.project_name}_OTA.hex.zip" {serial.port} {upload.speed}
